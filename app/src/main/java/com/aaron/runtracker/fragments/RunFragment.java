@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.aaron.runtracker.R;
+import com.aaron.runtracker.managers.LocationManager;
 
 /**
  * Created by Aaron on 15/7/8.
@@ -34,6 +35,20 @@ public class RunFragment extends Fragment {
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.setSupportActionBar(mToolbar);
 
+        view.findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LocationManager.getInstance(getActivity()).start();
+            }
+        });
+
+        view.findViewById(R.id.btn_stop).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LocationManager.getInstance(getActivity()).stop();
+            }
+        });
+
         setHasOptionsMenu(true);
         return view;
     }
@@ -51,4 +66,5 @@ public class RunFragment extends Fragment {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

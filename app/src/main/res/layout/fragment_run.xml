@@ -76,6 +76,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_start"
             style="@style/Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -83,6 +84,7 @@
             android:text="@string/start"/>
 
         <Button
+            android:id="@+id/btn_stop"
             style="@style/Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
