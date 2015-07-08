@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                style="@style/Subhead"
+                android:text="@string/started"/>
+
+            <TextView
+                style="@style/Body2"
+                tools:text="Started..."/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/Subhead"
+                android:text="@string/latitude"/>
+
+            <TextView
+                style="@style/Body2"
+                tools:text="Latitude..."/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/Subhead"
+                android:text="@string/longitude"/>
+
+            <TextView
+                style="@style/Body2"
+                tools:text="Longitude..."/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/Subhead"
+                android:text="@string/altitude"/>
+
+            <TextView
+                style="@style/Body2"
+                tools:text="Altitude..."/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/divider_margin">
+
+            <TextView
+                style="@style/Subhead"
+                android:text="@string/elapsed_time"/>
+
+            <TextView
+                style="@style/Body2"
+                tools:text="Elapsed Time..."/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_margin"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start"/>
+
+        <Button
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop"/>
+
+    </LinearLayout>
+
+</LinearLayout>
