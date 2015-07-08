@@ -10,4 +10,6 @@
     <string name="elapsed_time">Elapsed Time:</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="gps_enabled">GPS Enabled.</string>
+    <string name="gps_disabled">GPS disabled.</string>
 </resources>
